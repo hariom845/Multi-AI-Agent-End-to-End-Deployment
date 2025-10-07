@@ -11,6 +11,4 @@ venv/
 .env/
 *.pyc
 
-# OS files
-.DS_Store
-Thumbs.db
+
