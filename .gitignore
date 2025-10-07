@@ -10,5 +10,6 @@ __pycache__/
 venv/
 .env/
 *.pyc
+*venv_wsl/
 
 
