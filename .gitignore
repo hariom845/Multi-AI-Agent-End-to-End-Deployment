@@ -1,0 +1,16 @@
+venv/
+MULTI_AI_AGENT.egg-info/
+.env/
+# Environment files
+.env
+*.env
+
+# Python cache and virtual environment
+__pycache__/
+venv/
+.env/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db

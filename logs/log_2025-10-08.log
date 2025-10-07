@@ -1,0 +1,118 @@
+2025-10-08 00:23:35,711 - INFO - starting backend service..
+2025-10-08 00:23:37,712 - INFO - Starting Frontend service
+2025-10-08 00:24:26,569 - INFO - Sending request to backend
+2025-10-08 00:24:26,585 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 00:24:27,232 - ERROR - Some error ocuured during reponse generation
+2025-10-08 00:24:27,234 - ERROR - Backend error
+2025-10-08 00:28:31,102 - INFO - starting backend service..
+2025-10-08 00:28:33,103 - INFO - Starting Frontend service
+2025-10-08 00:29:00,307 - INFO - Sending request to backend
+2025-10-08 00:29:00,318 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 00:29:00,949 - ERROR - Some error ocuured during reponse generation
+2025-10-08 00:29:00,952 - ERROR - Backend error
+2025-10-08 00:41:49,630 - INFO - starting backend service..
+2025-10-08 00:41:51,631 - INFO - Starting Frontend service
+2025-10-08 00:42:25,286 - INFO - Sending request to backend
+2025-10-08 00:42:25,296 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 00:42:25,913 - ERROR - Some error ocuured during reponse generation
+2025-10-08 00:42:25,915 - ERROR - Backend error
+2025-10-08 00:51:33,548 - INFO - starting backend service..
+2025-10-08 00:51:35,549 - INFO - Starting Frontend service
+2025-10-08 00:52:06,008 - INFO - Sending request to backend
+2025-10-08 00:52:06,019 - INFO - Received request: {'model_name': 'llama-3.1-8b-instant', 'system_prompt': 'Act as assistant', 'messages': ['how to write research paper'], 'allow_search': True}
+2025-10-08 00:52:06,019 - ERROR - Error occurred during AI response generation
+Traceback (most recent call last):
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\backend\api.py", line 36, in chat_endpoint
+    response = get_response_from_ai_agents(
+        model_name=request.model_name,
+    ...<2 lines>...
+        system_prompt=request.system_prompt
+    )
+TypeError: get_response_from_ai_agents() got an unexpected keyword argument 'model_name'
+2025-10-08 00:52:06,022 - ERROR - Backend error
+2025-10-08 00:52:51,391 - INFO - starting backend service..
+2025-10-08 00:52:53,392 - INFO - Starting Frontend service
+2025-10-08 00:54:24,424 - INFO - starting backend service..
+2025-10-08 00:54:26,425 - INFO - Starting Frontend service
+2025-10-08 00:54:54,785 - INFO - Sending request to backend
+2025-10-08 00:54:54,795 - INFO - Received request for model : meta-llama/llama-guard-4-12b
+2025-10-08 00:54:55,388 - ERROR - Some error ocuured during reponse generation
+2025-10-08 00:54:55,390 - ERROR - Backend error
+2025-10-08 01:04:38,970 - INFO - starting backend service..
+2025-10-08 01:04:40,971 - INFO - Starting Frontend service
+2025-10-08 01:05:10,207 - INFO - Sending request to backend
+2025-10-08 01:05:10,219 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 01:05:10,820 - ERROR - Error during AI response generation
+Traceback (most recent call last):
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\backend\api.py", line 28, in chat_endpoint
+    response = get_response_from_ai_agents(
+        request.model_name,
+    ...<2 lines>...
+        request.system_prompt
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\core\ai_agent.py", line 14, in get_response_from_ai_agents
+    agent = create_react_agent(
+        model=llm,
+        tools=tools,
+        state_modifier=system_prompt
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\venv\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 477, in create_react_agent
+    raise TypeError(
+        f"create_react_agent() got unexpected keyword arguments: {deprecated_kwargs}"
+    )
+TypeError: create_react_agent() got unexpected keyword arguments: {'state_modifier': 'act as a assistant'}
+2025-10-08 01:05:10,823 - ERROR - Backend returned error: Failed to get AI response: create_react_agent() got unexpected keyword arguments: {'state_modifier': 'act as a assistant'}
+2025-10-08 01:07:07,684 - INFO - Sending request to backend
+2025-10-08 01:07:07,688 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 01:07:08,177 - ERROR - Error during AI response generation
+Traceback (most recent call last):
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\backend\api.py", line 28, in chat_endpoint
+    response = get_response_from_ai_agents(
+        request.model_name,
+    ...<2 lines>...
+        request.system_prompt
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\core\ai_agent.py", line 14, in get_response_from_ai_agents
+    agent = create_react_agent(
+        model=llm,
+        tools=tools,
+        state_modifier=system_prompt
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\venv\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 477, in create_react_agent
+    raise TypeError(
+        f"create_react_agent() got unexpected keyword arguments: {deprecated_kwargs}"
+    )
+TypeError: create_react_agent() got unexpected keyword arguments: {'state_modifier': 'You are medical ai agent specialized in cancer'}
+2025-10-08 01:07:08,179 - ERROR - Backend returned error: Failed to get AI response: create_react_agent() got unexpected keyword arguments: {'state_modifier': 'You are medical ai agent specialized in cancer'}
+2025-10-08 01:09:55,766 - INFO - starting backend service..
+2025-10-08 01:09:57,767 - INFO - Starting Frontend service
+2025-10-08 01:10:37,508 - INFO - Sending request to backend
+2025-10-08 01:10:37,519 - INFO - Received request for model : llama-3.1-8b-instant
+2025-10-08 01:10:38,121 - ERROR - Error during AI response generation
+Traceback (most recent call last):
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\backend\api.py", line 28, in chat_endpoint
+    response = get_response_from_ai_agents(
+        request.model_name,
+    ...<2 lines>...
+        request.system_prompt
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\app\core\ai_agent.py", line 17, in get_response_from_ai_agents
+    agent = create_react_agent(
+        model=llm,
+        tools=tools,
+        prefix=system_prompt  # Use correct argument accepted by create_react_agent
+    )
+  File "C:\Users\Parminder\Desktop\Multi AI agent\venv\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py", line 477, in create_react_agent
+    raise TypeError(
+        f"create_react_agent() got unexpected keyword arguments: {deprecated_kwargs}"
+    )
+TypeError: create_react_agent() got unexpected keyword arguments: {'prefix': 'you are a medical ai agent '}
+2025-10-08 01:10:38,124 - ERROR - Backend returned error: Failed to get AI response: create_react_agent() got unexpected keyword arguments: {'prefix': 'you are a medical ai agent '}
+2025-10-08 01:12:30,285 - INFO - starting backend service..
+2025-10-08 01:12:32,286 - INFO - Starting Frontend service
+2025-10-08 01:12:59,768 - INFO - Sending request to backend
+2025-10-08 01:12:59,778 - INFO - Received request for model : llama-3.3-70b-versatile
+2025-10-08 01:13:01,613 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-08 01:13:09,590 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-08 01:13:09,593 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2025-10-08 01:13:09,597 - INFO - Sucesfully recived response from backend
